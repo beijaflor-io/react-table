@@ -5,6 +5,7 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
 
 .ReactTable
   position:relative
+  .ReactTable__table
   table
     width: 100%
     border-collapse: collapse
@@ -23,7 +24,9 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
       transition: .3s ease
       transition-property: width, min-width, padding, opacity
 
+  .ReactTable__th
   th
+  .ReactTable__td
   td
     &:hover
       .-td
@@ -66,6 +69,7 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
         min-width: 0 !important
         padding: 0 !important
 
+  .ReactTable__thread
   thead
     box-shadow: 0px 5px 20px 0 alpha(black, .1)
     z-index: 0
@@ -73,13 +77,18 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
     &.-headerGroups
       border-bottom: 1px solid alpha(black, .05)
 
+      .ReactTable__th
+      .ReactTable__td
       th
       td
         background: alpha(black, .03)
 
+    .ReactTable__tr
     tr
       text-align:center
 
+    .ReactTable__th
+    .ReactTable__td
     th
     td
       width: 1%
@@ -96,8 +105,10 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
       &.-cursor-pointer
         cursor: pointer
 
+  .ReactTable__tbody
   tbody
     z-index:0
+    .ReactTable__tr
     tr
       border-bottom: solid 1px alpha(black, .05)
       &:last-child
@@ -105,15 +116,18 @@ $easeOutBack = cubic-bezier(0.175,  0.885, 0.320, 1.275)
 
       &:first-child td
         box-shadow: inset 0 20px 20px -20px alpha(black, .2)
+    .ReactTable__td
     td
       border-right:1px solid alpha(black, .02)
       &:last-child
         border-right:0
 
   &.striped
+    .ReactTable__tbody .ReactTable__tr
     tbody tr:nth-child(even)
       background: alpha(black, .03)
   &.highlight
+    .ReactTable__tbody .ReactTable__tr
     tbody tr:hover
       background: alpha(black, .05)
 
