@@ -1,6 +1,3 @@
 node_modules/
-lib/
-react-table.js
-react-table.css
 *.log
 example/dist/
