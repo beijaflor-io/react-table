@@ -17,6 +17,7 @@
   "main": "lib/index.js",
   "files": [
     "lib/",
+    "src/",
     "react-table.js",
     "react-table.css",
     "media/*.png"
