@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "build:node": "babel src --out-dir lib --source-maps inline",
-    "build:css": "rm -rf react-table.css && stylus src/index.styl --use ./node_modules/nib/lib/nib.js --compress -o react-table.css",
+    "build:css": "rm -rf react-table.css && stylus src/index.styl --compress -o react-table.css",
     "watch": "onchange 'src/**' -i -- npm-run-all build:*",
     "test": "standard",
     "umd": "rm -rf react-table.js && browserify lib/index.js -s reactTable -x react -t babelify -g uglifyify -o react-table.js",
